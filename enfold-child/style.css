@@ -1,0 +1,404 @@
+/*
+Theme Name: Aurora Massages
+Description: A <a href='http://codex.wordpress.org/Child_Themes'>Child Theme</a> for the Enfold Wordpress Theme. If you plan to do a lot of file modifications we recommend to use this Theme instead of the original Theme. Updating wil be much easier then.
+Version: 1.0
+Author: Kriesi
+Author URI: http://www.kriesi.at
+Template: enfold
+*/
+
+/* background: http://auroramassages.nl/wp-content/uploads/2014/05/background_1000x750.jpg */
+/* halloween: http://auroramassages.nl/wp-content/uploads/2015/10/halloween.jpg */
+/* sinterklaas: http://auroramassages.nl/wp-content/uploads/2015/11/pepernoten_small_bg.jpg */
+
+::selection{
+    background: #fe57a1;
+    color: #fff;
+    text-shadow: none;
+}
+
+/* Remove capitals from icon box */
+.iconbox_content .iconbox_content_title {
+text-transform: none !important;
+}
+
+/* Changes to date picker */
+.avia-datepicker-div a.ui-state-highlight, .avia-datepicker-div a.ui-state-active, {
+color: #ffbe3c !important;
+}
+
+.avia-datepicker-div {
+background: #3f1231 !important;
+}
+
+.avia-datepicker-div button {
+color: #5e0d44 !important;
+}
+
+.avia-datepicker-div a, #ui-datepicker-div > table > thead > tr > th > span {
+color: #3f1231 !important;
+}
+
+.avia-datepicker-div a.ui-state-hover {
+background-color: #ffbe3c !important;
+color: #5e0d44 !important;
+}
+
+/* Add opacity to background */
+#top #main,
+#top .html_stretched #wrap_all,
+#top .alternate_color,
+#top .header_color,
+#top .main_color,
+#top .header_color div,
+#top #header,
+#top .header_color .container_wrap_meta,
+#top .header_color .header_bg,
+#top .socket_color {
+background-color: rgba(0,0,0,0.3) !important;
+}
+
+#top .header_color div div {
+background-color: transparent !important;
+}
+
+.main_color .tabcontainer .active_tab_content,
+div .main_color .tabcontainer .active_tab,
+.main_color table,
+.main_color .widget_nav_menu ul:first-child>.current-menu-item,
+.main_color .widget_nav_menu ul:first-child>.current_page_item,
+.main_color .widget_nav_menu ul:first-child>.current-menu-ancestor,
+.main_color .pagination .current,
+.main_color .pagination a,
+.main_color.iconbox_top .iconbox_content,
+.main_color .av_promobox,
+.main_color .toggle_content,
+.main_color .toggler:hover,
+.main_color .related_posts_default_image,
+.main_color .search-result-counter,
+.main_color .container_wrap_meta,
+.main_color .avia-content-slider .slide-image,
+.main_color .avia-slider-testimonials .avia-testimonial-content,
+.main_color .avia-testimonial-arrow-wrap .avia-arrow,
+.main_color .news-thumb,
+.main_color .portfolio-preview-content,
+.main_color .portfolio-preview-content .avia-arrow {
+background-color:rgba(0,0,0,0.2) !important;
+}
+.widgettitle {
+font-weight: 400;
+text-transform: none;
+letter-spacing: 3px;
+font-size: 16px;
+}
+
+#main h2:first-child {
+font-family: "Lobster","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+font-style: normal;
+font-weight: 300;
+padding-top: 20px;
+}
+
+body .container_wrap .avia-builder-el-first {
+	margin-top: 0 !important;
+}
+
+.av-special-heading {
+margin-top: 0 !important;
+}
+
+.template-page .entry-content-wrapper h1, .template-page .entry-content-wrapper h2 {
+text-transform: none;
+}
+
+#header_main .container, .main_menu ul:first-child > li a {
+  height: 44px;
+  line-height: 44px;
+}
+
+/* sticky variation*/
+.html_header_top .html_header_sticky #main {
+  padding-top: 44px;
+}
+
+.fallback-post-type-icon {
+display: none;
+}
+
+body .container_wrap .avia-builder-el-first{margin-top:25px;}
+
+.avia_google_maps em { color: #121315; }
+.avia_google_maps { color: #121315; }
+
+/* #top input:not([type="checkbox"]) { width 100% !important; } */
+#top input { width 100% !important; }
+/* #top input:not(input[type="checkbox"]) { width: 100% !important; } */
+
+.main_color .tabcontainer .tab { color: #ffbe3c; }
+
+.image-overlay-inside, .image-overlay { display: none !important; }
+
+input#recaptcha_response_field { background-color: #eee !important; color: #121315 !important; }
+
+.textwidget .footerleft {
+display: block;
+width: 50%;
+float: left;
+text-align: justify;
+text-justify: newspaper;
+padding-right: 25px;
+}
+
+.textwidget .footerright {
+display: block;
+width: 50%;
+float: right;
+text-align: justify;
+text-justify: newspaper;
+}
+
+.textwidget .footerfull {
+display: block;
+width: 100%;
+float: left;
+}
+
+.avia-content-slider .slide-entry-title {
+letter-spacing: 2px;
+font-weight: normal;
+}
+
+@media only screen and (max-width: 767px) {
+#footersocialmedia, #footernieuwsbrief, #footervacatures { display: none; }
+#footeropeningstijden { display: block; width: 100%; float: left; }
+strong.logo a img { visibility: hidden; }
+.logo a { background: url('/wp-content/themes/enfold-child/images/logo_mobile_125x47.png') top 17px left no-repeat; width: auto; }
+.responsive #top #wrap_all .container { width: 85%; max-width: 100%; }
+.responsive #top #wrap_all .slide-entry { width: 100%; text-align: center; }
+body .container_wrap .avia-builder-el-first { margin-top: 15px; }
+.textwidget .footerright { text-align: left; line-break: auto; }
+#footer.first h3:last-child { margin-top: 2em; }
+.form-element-responsive input, .form-element-responsive select { width: 100% !important; }
+}
+
+.form-element-responsive input, .form-element-responsive select { margin: 0 !important; width: 100% !important; padding: 12px !important; border-radius: 4px !important; height: 42px !important; background-color: #5e0d44 !important; }
+.form-element-responsive input.btn-default { background-color: #fafafa !important; border-color: #eee !important; }
+label.checkbox-inline { display: inline-block !important; background-color: #5e0d44 !important; }
+.form-element-responsive textarea { border-radius: 4px !important; background-color: #5e0d44 !important; }
+
+.rc-anchor-normal { width: 100% !important; }
+
+div .slideshow_caption h2 { text-transform: none; font-weight: normal; }
+
+h3 { font-weight: 300; }
+h4 { font-weight: 400; }
+
+.show_mobile_menu ul#mobile-advanced li.menu-item, .show_mobile_menu a#advanced_menu_hide {
+background-color: #832161;
+}
+
+#advanced_menu_hide {
+top: 40px !important;
+right: 25px !important;
+}
+
+#mobile-advanced {
+padding: 80px 0;
+}
+
+#scroll-top-link:hover {
+background-color: #832161;
+border: 1px solid #5e0d44;
+color: #efefef;
+}
+
+#scroll-top-link {
+background-color: #832161;
+border: 1px solid #ffbe3c;
+color: #ffbe3c;
+}
+
+
+.socket_color {
+border-color: #5e0d44;
+}
+
+.show_mobile_menu ul#mobile-advanced li.menu-item a:hover {
+background-color: #5e0d44;
+}
+
+div.slide-entry a.slide-image { display: none; }
+a.slide-image { display: none !important; }
+
+.av-special-heading-h4 {
+margin-top: 25px;
+}
+
+/* ----------------------------- FOOTER ------------------------------ */
+
+#footer {
+background-color: rgba(0,0,0,0.5) !important;
+}
+
+#footer .container {
+padding: 0;
+}
+
+#footer a {
+color: #ffbe3c;
+}
+
+#footer a:hover {
+color: #ffbe3c;
+text-decoration: underline;
+}
+
+#footer #text-12 {
+padding-top: 17px;
+}
+
+#footer .flex_column.av_one_third:nth-child(1) {
+margin-left: 0;
+padding: 0 30px;
+width: 40%;
+}
+
+#footer .flex_column.av_one_third:nth-child(2) {
+margin-left: 0;
+padding: 0 30px;
+width: 20%;
+}
+
+#footer .flex_column.av_one_third:nth-child(3) {
+margin-left: 0;
+padding: 0 30px;
+width: 40%;
+}
+/* ----------------------------- PANORAMA ------------------------------ */
+
+.photonav .container {
+    margin: 0
+}
+
+.avia-content-slider {
+    margin: 0px 0px;
+    clear: both;
+}
+
+body .column-top-margin {
+    margin-top: 0px;
+}
+
+.main_color tr:nth-child(2n+1), .main_color .pricing-table > li:nth-child(2n+1), .main_color .pricing-extra {
+    background: transparent;
+}
+
+h3.slide-entry-title {
+display: none;
+}
+
+/* ----------------------------- BITCOIN ------------------------------ */
+
+.bitleft {
+    padding-right: 20px;
+    display: block;
+    float: left;
+}
+
+.bitcenter {
+    padding-right: 20px;
+    display: block;
+    float: left;
+}
+
+.bitright {
+    display: block;
+    float: left;
+}
+
+/* ----------------------------- MSG BOX ------------------------------ */
+
+.avia_message_box {
+    /*border-bottom: 1px solid #5E0D44;*/
+}
+
+.avia_message_box.avia-size-normal {
+    padding: 0;
+}
+
+div .avia_message_box .avia_message_box_title {
+    background-color: rgba(0, 0, 0, 0.15);
+    position: relative;
+    padding: 7px 20px;
+    font-size: 14px;
+    line-height: 1.4em;
+    letter-spacing: 2px;
+    text-shadow: none;
+    font-family: "Lobster","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    border-bottom: 2px solid #5E0D44;
+}
+
+.avia_message_box_content {
+    padding-top: 14px;
+    font-size: 12px;
+    text-transform: none;
+    font-weight: 600;
+}
+
+/* ----------------------------- MASONRY ------------------------------ */
+
+#top .container .av-masonry-entry {
+    width: 19.95%;
+}
+
+/* ----------------------------- RESPONSIVE ------------------------------ */
+
+@media only screen and (max-width: 767px) {
+div .avia_message_box .avia_message_box_title {
+    line-height: 2.6em;
+}
+}
+
+/* ----------------------------- BLOG POSTS ------------------------------ */
+
+article h3.slide-entry-title {
+display: block;
+}
+
+/* ----------------------------- FORMS ------------------------------ */
+
+form input, form select, .main_color textarea {
+color: #efefef !important;
+}
+
+form input[type='submit'] {
+color: #5e0d44 !important;
+}
+
+form.avia_ajax_form input[type="text"], form.avia_ajax_form textarea {
+background-color: #5e0d44 !important;
+}
+
+form.avia_ajax_form input[type="submit"] {
+background-color: #fafafa !important;
+border-color: #eee !important;
+}
+
+form.avia_ajax_form input[type="submit"]:hover {
+background-color: #ffbe3c !important;
+border-color: dd9c1a !important;
+}
+
+/* ----------------------------- PROMO BOX ------------------------------ */
+
+.av_promobox {
+margin: 20px 0 10px 0 !important;
+padding: 20px 30px !important;
+}
+
+/* ----------------------------- COMMENTS ------------------------------ */
+
+.comment_container span.minitext,
+.comment_container h3.miniheading {
+display: none !important;
+}

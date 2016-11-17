@@ -7,11 +7,14 @@ done
 
 # Wait for database to come online
 printf "Waiting on $MYSQL_DATABASE\n"
-while [ "$(dbtest)" != "1" ]; do
-  printf "No database detected...\n"
-  sleep 5
-done
-printf "Database found!\n"
+ping mysql
+sleep 300
+ping mysql
+# while [ "$(dbtest)" != "1" ]; do
+#   printf "No database detected...\n"
+#   sleep 5
+# done
+# printf "Database found!\n"
 
 # Add latest version of WordPress
 wp core download --color --locale=en_US

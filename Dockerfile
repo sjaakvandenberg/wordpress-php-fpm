@@ -1,7 +1,7 @@
 FROM alpine:edge
 
 COPY php.ini                    /etc/php7/conf.d/50-setting.ini
-COPY fpm-pool.conf              /etc/php7/php-fpm.d/fpm-pool.conf
+COPY fpm-pool.conf              /etc/php7/php-fpm.d/www.conf
 COPY scripts/*                  /usr/local/bin/
 COPY init.sh                    /init.sh
 COPY enfold.zip                 /tmp/enfold.zip

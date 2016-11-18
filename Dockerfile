@@ -1,4 +1,4 @@
-FROM alpine:3.4
+FROM alpine:edge
 
 COPY php.ini                    /etc/php7/conf.d/50-setting.ini
 COPY fpm-pool.conf              /etc/php7/php-fpm.d/www.conf
@@ -11,6 +11,7 @@ RUN set +x \
 && addgroup -g 82 -S www-data \
 && adduser -u 82 -D -S -G www-data www-data \
 && apk --update add --no-cache \
+--repository "http://dl-4.alpinelinux.org/alpine/edge/testing" \
 curl \
 libjpeg-turbo \
 libjpeg-turbo-utils \

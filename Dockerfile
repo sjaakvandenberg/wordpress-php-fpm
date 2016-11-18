@@ -40,4 +40,5 @@ pngquant \
 && curl -sL https://goo.gl/FJNWum -o /usr/bin/wp-cli \
 && chmod +x /usr/local/bin/* /usr/bin/wp-cli /init.sh
 
-CMD ["/bin/sh", "/init.sh"]
+# CMD ["/bin/sh", "/init.sh"]
+CMD ["php-fpm7", "-F"]
